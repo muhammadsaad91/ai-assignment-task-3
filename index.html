@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+    <p id="areaOfTriangle"></p>
+
+<body>
+    <script>
+        let side1 = 5, side2 = 6, side3 = 7;
+        let s = (side1 + side2 + side3) / 2;
+        let area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+        document.getElementById("areaOfTriangle").innerText = `Area of triangle of 5,6,7 is ${area.toFixed(2)}`;
+    </script>
+</body>
+
+</html>
